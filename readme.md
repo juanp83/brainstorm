@@ -67,9 +67,9 @@ git clone [new repo]
 
 2. Run `yarn init`
 
-3. Add React, ReactDOM and React Router
+3. Add React, ReactDOM, React Router and PropTypes
 ```
-yarn add react react-dom react-router-dom
+yarn add react react-dom react-router-dom prop-types
 ```
 
 4. Create a file in root called `.gitignore`, and add the following:
@@ -89,6 +89,7 @@ dist
 ```
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Nav from './Nav';
 import Home from './Home';
 ```
