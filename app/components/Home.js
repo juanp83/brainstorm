@@ -1,18 +1,18 @@
-import React from 'react';
+import React from 'react'
+import Nav from './Nav'
 
-class Home extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-
-    }
-  }
-  render() {
-    return (
-      <h1>My React App</h1>
-    )
-  }
+const navStyles = {
+  nav: "main-nav",
+  container: "main-nav-container"
 }
 
-module.exports = Home;
+const Home  = () => {
+  return (
+    <div className='home-container'>
+      <h1>Ideally</h1>
+      <Nav navStyles={navStyles} />
+    </div>
+  )
+}
+
+export default Home
