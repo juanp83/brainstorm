@@ -1,26 +1,24 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Nav from './Nav';
-import Home from './Home';
-import About from './About';
+import React from 'react'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Brainstorm from './Brainstorm'
+import Home from './Home'
+
+
 
 class App extends React.Component {
   render() {
     return (
       <Router>
-      <div className='container'>
-        <Nav />
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/about' component={About} />
-          <Route render={function() {
-            return <p>Not found</p>
-          }} />
-        </Switch>
-      </div>
-    </Router>
+        <div className='app-container'>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/brainstorm' component={Brainstorm} />
+            <Route render={()=>{return <p>Page Not Found</p>}} />
+          </Switch>
+        </div>
+      </Router>
     )
   }
 }
 
-module.exports = App;
+export default App

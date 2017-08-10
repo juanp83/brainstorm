@@ -1,0 +1,112 @@
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+// font-family: 'Muli', sans-serif;
+// font-family: 'Ovo', serif;
+
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ovo', serif;
+}
+
+//////////////// Brainstorm //////////////////
+
+.idea-list-container {
+  padding-top: 3rem;
+}
+
+.idea-input-container {
+  width: 24vw;
+  padding: 2rem;
+  position: fixed;
+  bottom: 10px;
+  left: 38%;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.25), 0 2px 6px 0 rgba(0,0,0,0.25);
+  input {
+    margin-bottom: 1rem;
+  }
+}
+
+.idea-list {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  max-height: 85vh;
+  li {
+    list-style-type: none;
+    margin: 10px 20px;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.4em;
+  }
+  li.current-input {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 1px;
+  }
+}
+
+//////////////// HOME //////////////////
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  h1 {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    margin: 0;
+  }
+  .main-nav-container {
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.25), 0 2px 6px 0 rgba(0,0,0,0.25);
+    padding: 3rem;
+    h1 {
+      display: none;
+    }
+    ul.main-nav {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style-type: none;
+        text-align: center;
+        margin: 3rem 3rem;
+        font-family: 'Ovo', serif;
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+//////////////// Side Nav //////////////////
+
+.active {
+  font-weight: bold;
+  color: darkred;
+}
+
+.side-nav-container {
+  float: left;
+  height: 100vh;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.25), 0 2px 6px 0 rgba(0,0,0,0.25);
+  padding: 6rem 3rem;
+  h1 {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    margin: 0;
+  }
+  ul.side-nav {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+      margin: 3rem 0;
+      font-family: 'Ovo', serif;
+      font-size: 1.2em;
+    }
+  }
+}
